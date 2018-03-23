@@ -1,0 +1,43 @@
+div.top-continer{
+    height: 50px;
+    width: 100%;
+    background: cornflowerblue;
+    font-size: 16px;
+    color: white;
+}
+div.top-continer1{
+    width: 90%;
+    height:100%;
+    margin:0 auto;
+}
+
+div.top-continer p.top_name{
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+div.top-continer ul.top_ul{
+    float: right;
+    height: 100%;
+    line-height: 100%;
+    list-style: none;
+}
+
+div.top-continer ul.top_ul>li{
+    float: left;
+    padding-right:8px;
+	padding-left:8px;
+    height:100%;
+    line-height: 50px;
+}
+div.top-continer ul.top_ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+div.top-continer ul.top_ul>li>a:hover{
+    color: red;
+    text-decoration: underline;
+}
+

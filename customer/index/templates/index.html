@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div class="continer">
+        <p class="p-title">{{ title }}</p>
+        <form action="{%url 'index'%}" method='POST'>
+            {%csrf_token%}
+            <div class='form_line'>
+                <p class="label">账号:
+                    <input type="text" id='id-phone' name='uphone'
+                           maxlength='11' placeholder='输入手机号'>
+                </p>
+            </div>
+            <p class="p-err-phone">{{ err_msg }}</p>
+            <div class='form_line'>
+                <p class="label">密码:
+                    <input type="password" id='id-pwd' name='upass' maxlength='12'
+                           placeholder='请输入密码'>
+                </p>
+            </div>
+            <p class="p-save">
+                <label for="id-save">
+                    <input type="checkbox" checked name="usave" id='id-save'>记住密码
+                </label>
+            </p>
+            <div class='form_line'>
+                <a href="{% url 'admin' %}" id='id-admin'>后台</a>
+                <input type="submit" value='登录' id='id-login'>
+            </div>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,83 @@
+
+.continer{
+	border:1px solid #ddd;
+	height:360px;
+	width:450px;
+	text-align:center;
+    background: white;
+    margin-top: 180px;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(255,255,255,0.5);
+}
+.p-title{
+    font-size: 25px;
+    color: cornflowerblue;
+    font-weight: bold;
+    height: 110px;
+    line-height: 100px;
+}
+form{
+    width: 330px;
+    height:250px;
+    margin-left: 60px;
+}
+
+div.form_line{
+    font-size: 16px;
+	height:40px;
+    width: 100%;
+}
+div p.label{
+	line-height:40px;
+}
+#id-phone, #id-pwd{
+	width:198px;
+	height:38px;
+	border:1px solid #ccc;
+	outline:none;
+	padding: 0 10px;
+    float: right;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.continer .p-err-phone{
+    height:30px;
+    line-height: 30px;
+    text-align: right;
+    color:red;
+    padding-right: 20px;
+}
+.continer .p-save{
+    width:140px;
+	height:58px;
+    line-height: 58px;
+    float:right;
+    margin-right: 100px;
+    text-align: left;
+}
+#id-save{
+    vertical-align: middle;
+}
+#id-login, #id-admin{
+	width:100px;
+	height:38px;
+	outline:none;
+	border:0;
+	background:cornflowerblue;
+	border-radius:5px;
+	font-size:16px;
+	color:white;
+    float:right;
+    margin-right: 20px;
+    text-decoration: none;
+    line-height: 38px;
+}
+
+
+#id-login:active, #id-admin:active{
+	background: dodgerblue;
+}
+#id-phone:focus,#id-pwd:focus{
+	border-color: cornflowerblue;
+	box-shadow:0 0 3px 0 cornflowerblue;
+}

@@ -1,0 +1,66 @@
+{% extends 'main_base.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/main_top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main_nav.css' %}">
+{% endblock %}
+
+{% block top %}
+    <div class="top-continer">
+        <div class="top-continer1">
+            <p class="top_name">{{ title }}</p>
+            <ul class="top_ul">
+                <li>您好,</li>
+                <li>{{ user.user_name }}</li>
+                <li>
+                    <a href="{% url 'changepwd' %}" target="_parent">[ 修改密码 ]</a>
+                </li>
+                <li>
+                    <a href="{% url 'logout' %}" target="_parent">[ 退出系统 ]</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block nav %}
+    <div class="nav-div">
+        <img src="{% static 'images/logo.png' %}">
+        <p>{{ title }}</p>
+    </div>
+    <ul class="nav-ul">
+        {% for t in types %}
+            <li>{{ t.type_name }}<p>&gt;</p>
+                <ul class="nav-ul-ul">
+                    {% for key, value in sectypes.items %}
+                        {% ifequal key t.id %}
+                            {% for s in value %}
+                                <li id="{{ s.id }}">{{ s.sectype_name}}</li>
+                            {% endfor %}
+                        {% endifequal %}
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
+
+{% block content %}
+    <div class="search_bar clearfix">
+        <div class="search_con fr">
+            <input type="text" class="input_text fl" name="" placeholder="搜索商品">
+            <input type="button" class="input_btn fr" name="" value="搜索">
+        </div>
+    </div>
+{% endblock %}
+
+
+{#{% block footer %}#}
+{##}
+{#{% endblock %}#}
+

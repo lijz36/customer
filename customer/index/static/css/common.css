@@ -1,0 +1,20 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol{
+    margin:0;
+    padding:0;
+}
+body{
+	font:14px "Microsoft YaHei", Arial;
+	color:#333;
+}
+img{
+    vertical-align: middle;
+}
+
+.continer{
+    width:1280px;
+    margin:0 auto;
+}
+
+.lf{float:left;}
+.rf{float: right;}
+.clear{clear:both;}

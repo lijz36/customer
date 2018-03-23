@@ -1,0 +1,58 @@
+div.body-continer{
+    height: 720px;
+    width: 90%;
+    margin: 2px auto;
+}
+div.footer-continer{
+    width: 1280px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 16px;
+    padding: 30px 0;
+}
+div.footer-continer img{
+    width: 60px;
+    height: 60px;
+}
+
+div.footer-continer div{
+    width: 100%;
+    height: 60px;
+}
+div.footer-continer p{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+div.footer-continer p .a1{
+    margin-left: 40px;
+}
+div.footer-continer a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+div.footer-continer a:hover{
+    text-decoration: underline;
+}
+
+/* logo、搜索框、购物车样式 */
+
+.search_bar{width:1200px;height:115px;margin:0 auto;}
+.logo{width:200px;height:90px;margin:20px 0 0 5px;
+	display:inline-block;}
+.logo img{
+	width:100%;
+	height:100%;
+}
+
+.search_con{width:616px;height:38px;border:1px solid #37ab40;margin:34px 0 0 124px;background:url(../images/icons.png) 10px -338px no-repeat;}
+.search_con .input_text{width:470px;height:34px;border:0px;margin:2px 0 0 36px;outline:none;font-size:12px;color:#737272;font-family:'Microsoft Yahei'}
+
+.search_con .input_btn{
+	width:100px;height:38px;background-color:#37ab40;border:0px;font-size:14px;color:#fff;font-family:'Microsoft Yahei';outline:none;cursor:pointer;
+}
+
+/* 清除浮动 */
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1}
